@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no,minimum-scale=1">
+  <title>小米保险</title>
+  <link rel="prefetch" href="fonts/number-webfont.woff2">
+  <script>
+    var oHtml=document.getElementsByTagName("html")[0];
+    var iWidth=document.documentElement.clientWidth;
+    var defaultPercent = 30;
+    iWidth = iWidth > 1080 ? 1080 : iWidth;
+    if(window.MiFiJsInternal && MiFiJsInternal.getFontScale){
+      var scalePercent = MiFiJsInternal.getFontScale();
+      oHtml.style.fontSize=(iWidth/defaultPercent)/scalePercent+"px";
+    }else{
+      var rootFontSize = iWidth/defaultPercent;
+      oHtml.style.fontSize= rootFontSize + "px";
+      //miui大字体重置
+      var realFontSize = parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+      var resetFontSize = rootFontSize * rootFontSize / realFontSize;
+      oHtml.style.fontSize = resetFontSize + "px";
+    }
+  </script>
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+	<div id="app"></div>	
+	<script src="/tracker.js"></script>
+	<script src="build/index_build.js"></script>
+</body>
+</html>
