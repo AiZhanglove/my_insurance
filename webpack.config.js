@@ -20,7 +20,7 @@ module.exports = {
 			},
 			{
 				test:/\.(js|jsx)$/,
-				exculde: /node_moudles/,
+				exclude: /node_modules/,
 				loader:'react-hot!babel-loader'
 			},
 			{
@@ -30,12 +30,13 @@ module.exports = {
 		]
 	},
 	resolve:{
+		//自动补全后缀
 		extenstions:['','.js','.jsx','less','scss','css']
 	},
-	babel:{
-		presets:['es2015','stage-2','react'],
-		plugins:['transfrom-runtime','add-module-exports']
-	},
+	babel: {
+        presets: ['es2015', 'stage-2', 'react'],
+        plugins: ['transform-runtime', 'add-module-exports']
+    },
 	devServer: {
         proxy: {
             '/v1/*': {

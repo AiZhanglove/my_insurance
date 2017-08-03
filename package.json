@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --profile --progress --color --quiet --port 8888 --host 0.0.0.0",
+    "dev": " webpack-dev-server --inline --hot  --profile --progress --color --quiet --port 9001 --host 0.0.0.0",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "pub": "rimraf dist && cross-env NODE_ENV=production webpack --progress --hide-modules --config prod/webpack.prod.conf.js"
   },

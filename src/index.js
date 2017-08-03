@@ -4,16 +4,16 @@ import ReactDOM from 'react-dom';
 import Loading from './components/Loading.jsx';
 import NewIndexComponet from './frame/NewIndexComponet.jsx';*/
 export default class App extends React.Component {
-    constructor(props) {
+    /*constructor(props) {
         super(props);
         this.state = {
             cfgs:'',
             lists: [],
             isLoading: true
         }
-    }
+    }*/
 
-    getList(pageNum){
+    /*getList(pageNum){
         var self = this;
         var hosts = window.location.protocol + "//" + window.location.host;
         var platform = methods.getPlatform() || "web";
@@ -84,7 +84,7 @@ export default class App extends React.Component {
         //禁掉back
         window.MiFiJsInternal && MiFiJsInternal.disableGoBack(true);
     }
-
+*/
     render() {
         var self = this;
         return (
