@@ -93,7 +93,7 @@ export default class App extends React.Component {
                     {self.state.cfgs && <NewIndexComponet res={self.state.cfgs} />}
                 <Loading isLoading={this.state.isLoading}/>
                 */}
-                    <h1> 这是标题</h1>
+                    <h1> 这是标题1</h1>
                     <div>这是内容</div>
             </div>
         )

@@ -5,7 +5,7 @@ module.exports = {
 	},
 	output:{
 		path:'./build',
-		publicPath:'./build',
+		publicPath:'build/',
 		filename:'[name].js'
 	},
 	module:{
@@ -56,7 +56,7 @@ module.exports = {
     }
 }
 
-//意义？
+//
 if (process.env.NODE_ENV === 'production') {
     module.exports.plugins = [
         new webpack.DefinePlugin({
