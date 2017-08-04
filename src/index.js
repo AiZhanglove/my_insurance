@@ -21,7 +21,6 @@ export default class App extends React.Component {
             url: hosts + '/v1/page/home/ins',
             success: function (data) {
                 if(data.success){
-                    console.log(data)
                     self.setState({
                         cfgs: data.value,
                         isLoading: false
@@ -30,7 +29,7 @@ export default class App extends React.Component {
                     })
                 }
             },
-            error: function (status) {
+            error: function (status) {micloud
                 console.log(status)
             }
         });
