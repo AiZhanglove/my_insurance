@@ -12,7 +12,6 @@ export default class NewIndexComponet extends React.Component {
 
 
     getTarget(str){
-    	console.log(str)
     	var pool = {
             "small_card_bg_insurance":"08756749e99324fde2a8d1d41272a617675246272",
             "icon_health_insurance":"083e44469503d274d929c6f2116ff9ca0b4437301",
@@ -50,7 +49,6 @@ export default class NewIndexComponet extends React.Component {
     		el.items.map(function(ele,ind){
     			switch (ele.type){
                     case "small_card":
-                    	console.log(ele)
                         ele.content.bg = self.getTarget(ele.content.bg);
                         break;
                     case "banner":
@@ -60,7 +58,7 @@ export default class NewIndexComponet extends React.Component {
                         ele.content = self.dataChaneg(ele.content,"icons");
                         break;
                     case "4line":
-                        // ele.content.icon = self.getTarget(ele.content.icon);
+                        ele.content.icon = self.getTarget(ele.content.icon);
                         break;
                 }
     		})
@@ -70,9 +68,7 @@ export default class NewIndexComponet extends React.Component {
 
     render() {
         var self = this;
-        console.log(self.props.res);
-        var value = self.props.res.body;
-        self.native2Web();
+        var value = self.native2Web();
         return (
             <div className="newindex-wrap">
         		{value && value.map(function(el, index) {
