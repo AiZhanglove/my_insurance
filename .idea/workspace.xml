@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="756f1307-032b-4f22-8f5d-d513a67212ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frame/NewIndexComponet.jsx" afterPath="$PROJECT_DIR$/src/frame/NewIndexComponet.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my_insurance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,22 +28,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-              <folding>
-                <marker date="1501833651341" expanded="true" signature="262:1566" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="286:394" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="329:388" placeholder="{&quot;isLoading&quot;: true...}" />
-                <marker date="1501833651341" expanded="true" signature="416:1103" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="595:1095" placeholder="{&quot;type&quot;: 'GET'...}" />
-                <marker date="1501833651341" expanded="true" signature="705:988" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="739:974" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="775:881" placeholder="{&quot;isLoading&quot;: false...}" />
-                <marker date="1501833651341" expanded="true" signature="892:955" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="1027:1085" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="1128:1182" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="1197:1564" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="1275:1373" placeholder="{...}" />
-                <marker date="1501833651341" expanded="true" signature="1297:1355" placeholder="/*...*/" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,8 +36,8 @@
       <file leaf-file-name="NewIndexComponet.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frame/NewIndexComponet.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4099099">
-              <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.6734234">
+              <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -67,6 +52,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/frame/NewIndexComponet.jsx" />
       </list>
     </option>
   </component>
@@ -108,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,7 +148,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,23 +332,16 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frame/NewIndexComponet.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1501833651341" expanded="true" signature="262:1566" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="286:394" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="329:388" placeholder="{&quot;isLoading&quot;: true...}" />
-            <marker date="1501833651341" expanded="true" signature="416:1103" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="595:1095" placeholder="{&quot;type&quot;: 'GET'...}" />
-            <marker date="1501833651341" expanded="true" signature="705:988" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="739:974" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="775:881" placeholder="{&quot;isLoading&quot;: false...}" />
-            <marker date="1501833651341" expanded="true" signature="892:955" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1027:1085" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1128:1182" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1197:1564" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1275:1373" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1297:1355" placeholder="/*...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -370,22 +349,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1501833651341" expanded="true" signature="262:1566" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="286:394" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="329:388" placeholder="{&quot;isLoading&quot;: true...}" />
-            <marker date="1501833651341" expanded="true" signature="416:1103" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="595:1095" placeholder="{&quot;type&quot;: 'GET'...}" />
-            <marker date="1501833651341" expanded="true" signature="705:988" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="739:974" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="775:881" placeholder="{&quot;isLoading&quot;: false...}" />
-            <marker date="1501833651341" expanded="true" signature="892:955" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1027:1085" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1128:1182" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1197:1564" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1275:1373" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1297:1355" placeholder="/*...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -393,22 +357,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1501833651341" expanded="true" signature="262:1566" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="286:394" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="329:388" placeholder="{&quot;isLoading&quot;: true...}" />
-            <marker date="1501833651341" expanded="true" signature="416:1103" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="595:1095" placeholder="{&quot;type&quot;: 'GET'...}" />
-            <marker date="1501833651341" expanded="true" signature="705:988" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="739:974" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="775:881" placeholder="{&quot;isLoading&quot;: false...}" />
-            <marker date="1501833651341" expanded="true" signature="892:955" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1027:1085" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1128:1182" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1197:1564" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1275:1373" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1297:1355" placeholder="/*...*/" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -416,29 +373,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <marker date="1501833651341" expanded="true" signature="262:1566" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="286:394" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="329:388" placeholder="{&quot;isLoading&quot;: true...}" />
-            <marker date="1501833651341" expanded="true" signature="416:1103" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="595:1095" placeholder="{&quot;type&quot;: 'GET'...}" />
-            <marker date="1501833651341" expanded="true" signature="705:988" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="739:974" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="775:881" placeholder="{&quot;isLoading&quot;: false...}" />
-            <marker date="1501833651341" expanded="true" signature="892:955" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1027:1085" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1128:1182" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1197:1564" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1275:1373" placeholder="{...}" />
-            <marker date="1501833651341" expanded="true" signature="1297:1355" placeholder="/*...*/" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frame/NewIndexComponet.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4099099">
-          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.6734234">
+          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
           <folding />
         </state>
       </provider>

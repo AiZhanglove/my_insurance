@@ -12,6 +12,30 @@ export default class App extends React.Component {
         }
     }
 
+    lazy (selector) {
+        //获取屏幕的高度
+        var winH = window.innerHeight;
+        //滚动处理
+        function scrollFn() {
+            winH = window.innerHeight;
+            [].forEach.call(selector ? document.querySelector(selector).querySelectorAll('img[data-src]') : document.querySelectorAll('img[data-src]'), function (img) {
+                if(img.getBoundingClientRect().top <= winH ){
+                    img.setAttribute('src', img.getAttribute('data-src'));
+                    img.onload = function () {
+                        img.removeAttribute('data-src');
+                    };
+                }
+            });
+            if(!document.querySelectorAll('img[data-src]').length){
+                window.removeEventListener('scroll', scrollFn, false)
+            }
+        }
+        //初始化调用下
+        scrollFn();
+        //监听滚动
+        window.addEventListener('scroll', scrollFn, false);
+    }
+
     getList(pageNum){
         var self = this;
         var hosts = window.location.protocol + "//" + window.location.host;
@@ -25,7 +49,7 @@ export default class App extends React.Component {
                         cfgs: data.value,
                         isLoading: false
                     },function(){
-                        // self.lazy();
+                        self.lazy();
                     })
                 }
             },
@@ -44,11 +68,6 @@ export default class App extends React.Component {
         var self = this;
         return (
             <div>
-                {
-                    /*<h1> 这是标题1222</h1>
-                    <div>这是内容</div>*/
-                }
-                
                 {self.state.cfgs && <NewIndexComponet res={self.state.cfgs}/>}
                 <Loading isLoading={this.state.isLoading}/>
             </div>

@@ -1,7 +1,10 @@
 import React from 'react';
 // import methods from '../assets/methods.js';
 import CardComponent from '../newindex/CardComponent.jsx';
-
+import IconsComponent from '../newindex/IconsComponent.jsx';
+import BannerComponent from '../newindex/BannerComponent.jsx';
+import FourLineComponent from '../newindex/FourLineComponent.jsx';
+import MoreComponent from '../newindex/MoreComponent.jsx';
 require('../newindex/newindex.less');
 
 
@@ -83,18 +86,22 @@ export default class NewIndexComponet extends React.Component {
 	                    				tag = <CardComponent {...item.content} key={ind} />;
 	                    				break;
 	                    			case "icons":
-	                    				tag = <div key={ind}>这是icons</div>;
+	                    				tag = <IconsComponent {...item} key={ind} />;
 	                    				break;
 
 	                    			case "banner":
-	                    				tag = <div key={ind}>这是banner</div>;
+	                    				if(item.content.length>0){
+	                    					tag = <BannerComponent {...item} key={ind} />
+	                    				}
 	                    				break;
 
 	                    			case "4line":
-	                    				tag = <div key={ind}>这是4line</div>;
+	                    				tag = <div className="fourline-container" key={ind}>
+                                                    <FourLineComponent {...item}/>
+                                                </div>
 	                    				break;
 	                    			case "button":
-	                    				tag = <div key={ind}>这是button</div>;
+	                    				tag = <MoreComponent {...item} key={ind} />
 	                    				break;
 	                    		}
 	                    		return tag;
