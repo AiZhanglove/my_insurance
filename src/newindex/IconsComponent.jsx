@@ -6,7 +6,7 @@ export default class IconsComponent extends React.Component{
         super(props);
     }
 
-    handleClick(){
+    handleClick(el){
     	MiFiLoantracker({
             pageTitle: el.target.stat || '',
             productType: "insurance"
