@@ -1,0 +1,938 @@
+.car-inner-cont-wrap{
+    position:fixed;
+    top:0;
+    bottom:69px;
+    width:100%;
+    overflow:scroll;
+    background: #fff;
+}
+
+.car-banner-coupon-logo{
+    display: block;
+    width: 53px;
+    /*height: 72px;*/
+    position:fixed;
+    top:57%;
+    right:33px;
+    z-index: 1000000;
+    animation: myShake 100ms ease infinite alternate;
+    -webkit-animation: myShake 100ms ease infinite alternate;
+}
+
+@keyframes myShake
+{
+    from {-webkit-transform: rotate(2deg);}
+    to {-webkit-transform: rotate(-2deg);}
+}
+
+@-webkit-keyframes myShake
+{
+    from {transform: rotate(2deg);-webkit-transform: rotate(2deg);}
+    to {transform: rotate(-2deg);-webkit-transform: rotate(-2deg);}
+}
+
+.car-cashBackPercent{
+    padding-left: 25px;
+    padding-right: 14px;
+}
+
+.car-cashBackPercent .cont{
+    font-size: 14px;
+    padding: 10px 31px;
+    /*color: #4c4c4c;*/
+    background: url(/images/insurance/car-cash_back_img.png) no-repeat left center;
+    background-size: 14px 14px;
+    padding-left: 21px;
+    padding-right: 0;
+    color: red;
+}
+
+.car-cashBackPercent .act{
+    color: blue;
+    display: inline-block;
+}
+
+.car-cashBackPercent .new-cont{
+    font-size: 14px;
+    padding: 10px 31px;
+    /*color: #4c4c4c;*/
+    background: url(https://ts.market.mi-img.com/thumbnail/png/q80/Finance/02756749e99524fd22a8ddd41222a6106752c6272) no-repeat left center;
+    background-size: 14px 14px;
+    padding-left: 21px;
+    padding-right: 0;
+    color: red;
+}
+
+.fixbtn-wrap{
+    background-color: #fff;
+}
+
+.plate-wrap{
+    padding: 0 22px;
+}
+
+.plate-wrap>div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.plate-wrap .car-info{
+    /*position: relative;*/
+    display: flex;
+    padding: 0;
+}
+
+.car-info .car-plate-placeholder{
+    /*display: inline-block;*/
+    display: block;
+    position: absolute;
+    /*padding-top: 2px;*/
+    font-size: 14px;
+    top: 2px;
+    left: 13%;
+    color: #999;
+    z-index: 1000;
+}
+
+
+.car-info .province_city{
+    /*display: inline-block;*/
+    display: block;
+    font-size: 14px;
+    padding: 2px 13px 2px 0;
+    /*margin-right: -10px;*/
+    /*width: 23%;*/
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.first-group{
+    /*padding-top: 28px;*/
+}
+
+.car-info .plate{
+    /*display: inline-block;*/
+    display: block;
+    width: 58%;
+    padding: 2px 10px;
+    /*padding-left: 10px;*/
+    font-size: 14px;
+    position: relative;
+}
+
+#plateNum{
+    font-size: 14px;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 19px;
+}
+
+.car-info .cut-rule{
+    display: block;
+    width: 0;
+    height: 0;
+    padding: 0;
+    background-color: #fff;
+    border-left: 3px dotted #666;
+    border-bottom: 3px dotted #666;
+    border-right: 3px dotted #fff;
+    border-top: 3px dotted #fff;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+    right: 6px;
+}
+
+.mod-title{
+    padding: 15px 24px;
+    background-color: #fff;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.mod-content{
+    background-color: #fff;
+}
+
+.mod-content .no-border-top{
+    border-top: none;
+}
+
+.no-car_info{
+    width: 100%;
+    height: 14px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.ins-form_common .mutex_btn{
+    padding: 10px 0;
+    position: absolute;
+    right: 24px;
+}
+
+.mod-content .ins-form_common .car-form-key{
+    /*width: 19%;*/
+    padding-right: 10px;
+}
+
+.not_mycar{
+    padding: 15px 24px;
+}
+
+.not_mycar a{
+    text-decoration: underline;
+    color: #ff7c67;
+}
+
+.car_selection_lists{
+    padding: 0 24px;
+    position: relative;
+}
+
+.car_selection{
+    position: relative;
+    padding: 15px 0;
+}
+
+.car-img-selection{
+    position: absolute;
+    margin-left: -20px;
+    top: 43%;
+    left: 7px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #ff7c67;
+    border-left-color: #fff;
+    border-bottom-color: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.car_logo{
+    vertical-align: middle;
+}
+
+.car-red{
+    color: #ff7c67;
+}
+
+.car-ensure_img{
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 120px;
+    padding: 0 40px;
+}
+
+.ins-car_plate_num{
+    position: relative;
+}
+
+.ins-car_plate_num .error{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    color: red;
+    font-size: 12px;
+}
+
+/*.car_selection_lists .car_selection:before{
+	display: block;
+	content: '';
+	position: absolute;
+	margin-left: -6px;
+	top: 50%;
+	left: 7px;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #ff7c67;
+	border-left-color: #fff;
+	border-bottom-color: #fff;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}*/
+
+.car_selection .car_logo{
+    width: 30px;
+    /*height: 23px;*/
+}
+
+.car-select-brand-family-wrap{
+    padding: 10px 24px 0;
+}
+
+.car-select-brand-family-wrap .select-wrap{
+    display: inline-block;
+    width: 48%;
+}
+
+.car-select-brand-family-wrap .select-wrap select{
+    -webkit-appearance: none;
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: #fff url(https://ts.market.mi-img.com/thumbnail/png/q80/Finance/0f3e41469407d474e329c0f2130ff0c8043de6a78) no-repeat 96%;
+    background-size: 8px 3px;
+    padding-right: 12px;
+    padding-left: 3px;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.car-select-brand-family-wrap .select-wrap:nth-child(1){
+    margin-right: 2%;
+}
+
+
+/***************carshowinsurance*****************/
+
+.mod-show-ins_top{
+    padding: 20px 26px 10px 26px;
+    position: relative;
+    display: flex;
+    padding-right: 0;
+}
+
+.ins_top_logo{
+    display: block;
+    width: 17%;
+    height: 100%;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.ins_top_cont{
+    /*display: inline-block;*/
+    width: 83%;
+    padding-left: 2%;
+    padding-top: 2px;
+}
+
+.cont_wrap_top .title{
+    font-size: 16px;
+    padding-right: 4px;
+}
+
+.cont_wrap_top .from{
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.mod-car-subsidy{
+    padding: 0 26px 20px 26px;
+    display: flex;
+}
+
+.mod-car-subsidy .right-aa{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.right-aa .item-j{
+    border: 1px solid #ff6a42;
+    border-radius: 4px;
+    background-color: #ff6a42;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.right-aa .jh{
+    color: #e35d58;
+    padding: 3px 3px;
+}
+
+.right-aa .item-j .fi{
+    display: inline-block;
+    background-color: #ff6a42;
+    color: #fff;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+.right-aa .item-j .cont{
+    display: inline-block;
+    background-color: #fff;
+    color: #8d8d8d;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.cont_wrap_bottom {
+    display: flex;
+    padding-right: 26px;
+}
+
+.cont_wrap_bottom .left_wrap{
+    flex: 5;
+}
+
+.cont_wrap_bottom .left_wrap .left_wrap_top{
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.cont_wrap_bottom .left_wrap .left_wrap_bottom{
+    display: block;
+    color: #ff6a42;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cont_wrap_bottom .right_wrap{
+    margin-top: 7px;
+    padding: 7px;
+    color: #ff6a42;
+    font-size: 12px;
+    flex: 2;
+    text-align: center;
+}
+
+.cont_wrap_bottom .price{
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 4px;
+    color: #e35d58;
+}
+
+.cont_wrap_bottom .act{
+    display: inline-block;
+    border: 1px solid #e35d58;
+    padding-left: 14px;
+    padding-right: 2px;
+    background: url('/images/insurance/car_red_envelope.png') no-repeat 0;
+    background-size: 12px 100%;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+/*.act img{
+	width: 12px;
+	height: 18px;
+	vertical-align: bottom;
+}*/
+
+.act .act_cont{
+    font-size: 12px;
+}
+
+.insure-info_checkbox{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    padding-right: 26px;
+}
+
+.mod-show-ins_bottom{
+    padding: 0 26px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.show_ins_wrap_top{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.show_ins_wrap_top span{
+    display: inline-block;
+}
+
+.show_ins_wrap_top .left{
+    /*width: 76%;*/
+    font-size: 14px;
+    float: left;
+    color: #ff6a42;
+    padding-left: 21px;
+    /*background: url("https://ts.market.mi-img.com/thumbnail/jpeg/q80/Finance/056dd34d6356c48ee0338bbbca81d52e1db31f817") no-repeat 0;*/
+    background: url("https://ts.market.mi-img.com/thumbnail/png/q80/Finance/0f9ea42d271a8d7ed42e5a5791ef520d4a9414318") no-repeat 0;
+    background-size: 18px 13px;
+    padding-right: 5px;
+}
+
+.show_ins_wrap_top .left .percent{
+    display: inline-block;
+    font-size: 12px;
+    color: #ff6a42;
+    border: 1px solid #ff6a42;
+    border-radius: 7px;
+    padding: 1px 12px 1px 4px;
+    background: url("https://ts.market.mi-img.com/thumbnail/png/q80/Finance/02a3c477958c457596e78947274fe75e1e0436039") no-repeat 30px 2px;
+    background-size: 8px 8px;
+    margin-left: 5px;
+}
+
+.show_ins_wrap_top .left .per-intro{
+    font-size: 12px;
+    color: #ccc;
+    padding-left: 2px;
+}
+
+.show_ins_wrap_top .ins_choose{
+    color: #ff6a42;
+    padding-right: 14px;
+    /*padding-right: 2px;*/
+    background: url('https://ts.market.mi-img.com/thumbnail/png/q80/Finance/02756479e1952efd2da8ded41762a312659427267') no-repeat right;
+    background-size: 12px 12px;
+    float: right;
+}
+
+.car-order-new-padding{
+    padding-bottom: 14px;
+}
+
+.show_ins_wrap_bottom .list_title{
+    padding: 13px 12px;
+    background-color: #e1f2ff;
+    position: relative;
+}
+
+.show_ins_wrap_bottom .list_title span{
+    display: inline-block;
+    width: 50%;
+    color: #647582;
+    font-size: 14px;
+}
+
+.show_ins_wrap_bottom .list_title .tips{
+    border-left: 12px solid #e1f2ff;
+    position: absolute;
+    top: -12px;
+    left: 43px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    border-top: 6px solid #fff;
+    border-bottom: 6px solid #fff;
+    border-right: 0;
+}
+
+.show_ins_wrap_bottom .ins_lists_cont{
+    padding: 20px 12px;
+    background-color: #edf7ff;
+    padding-bottom: 0;
+    color: #929da6;
+}
+
+.show_ins_wrap_bottom .ins_lists_cont span{
+    display: inline-block;
+    padding-bottom: 8px;
+    vertical-align: top;
+}
+
+.show_ins_wrap_bottom .ins_lists_cont .ins_lists_cont_title{
+    display: inline-block;
+    width: 50%;
+    color: #2e4457;
+    font-size: 14px;
+}
+
+.show_ins_wrap_bottom .ins_lists_cont .aa{
+    /*padding-right: 9px;*/
+    box-sizing: border-box;
+}
+
+.show_ins_wrap_bottom .ins_lists_cont .left{
+    width: 67%;
+}
+
+.show_ins_wrap_bottom .ins_lists_cont .right{
+    width: 33%;
+}
+
+.show_ins_wrap_bottom .ins_lists_cont .left{
+    /*padding-left: 9px;*/
+    box-sizing: border-box;
+}
+
+
+/***********carChooseInsurance****************/
+
+.mod-car_choose_title{
+    padding: 13px;
+    border-bottom: 10px solid #f2f2f2;
+}
+
+.mod-car_choose_title span{
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.mod-car_choose_title .left{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+    background-color: #f2f2f2;
+}
+
+.mod-car_choose_title .right{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.mod-car_choose_content{
+    padding: 0 26px;
+    border-bottom: 10px solid #f2f2f2;
+}
+
+/*.mod-car_choose_content:nth-child(4){
+	border-bottom: none;
+}*/
+
+.mod-car_choose_content .car_choose_content_top{
+    padding: 17px 0;
+}
+
+.car_choose_content_top>div{
+    width: 33.3333%;
+}
+
+.flex{
+    display: flex;
+}
+
+.car_choose_select{
+    position: relative;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.car_choose_bottom_wrap select{
+    -webkit-appearance: none;
+    border: none;
+    background-color: #fff;
+    font-size: 12px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #f55152;
+}
+
+.car_choose_select:after{
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 3px;
+    right: -10px;
+}
+
+.car_choose_bottom_wrap{
+    padding: 17px 0;
+}
+
+.car_choose_content_top .ins_name, .car_choose_content_top .ins_select, .car_choose_bottom_wrap .ins_name, .car_choose_bottom_wrap .ins_select{
+    width: 30%;
+}
+
+.car_choose_bottom_wrap .total_price, .car_choose_content_top .total_price{
+    width: 40%;
+}
+
+.car_choose_content_bottom .ins_select{
+    color: #f55152;
+}
+
+.haveMutex{
+    padding-left: 19%;
+    box-sizing: border-box;
+}
+
+/**************************************carFillOrder*************************************/
+
+.mod-order-ins_wrap{
+    border-bottom: 10px solid #f2f2f2;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-border{
+    border: none;
+}
+
+.no-background{
+    background: none;
+}
+
+.ins-form_common>li .col-6{
+    width: 60%;
+    display: inline-block;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.ins-form_common>li .col{
+    padding-left: 40%;
+}
+
+.ins-form_common>li .ff{
+    position: absolute;
+    padding: 10px;
+    right: 24px;
+}
+
+.border-bottom{
+    border-bottom: 10px solid #f2f2f2;
+}
+
+.car_identifying_code{
+    padding: 0 24px 1px 24px;
+    position: relative;
+}
+
+.car_identifying_code>div{
+    padding: 0;
+}
+
+.car_identifying_code .left_cont{
+    position: absolute;
+    padding: 0 24px;
+    top: 81px;
+    right: 0;
+    border-left: 1px solid #d9d9d9;
+    width: 70px;
+    text-align: center;
+}
+
+.car_red_color{
+    color: #f55152;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+/************************carEnsureOrder**********************/
+
+.mod-car-order_dispatch{
+    padding: 20px 24px;
+}
+
+.mod-car-order_dispatch h2{
+    padding-bottom: 10px;
+}
+
+.mod-car-order_dispatch .add-info{
+    padding-bottom: 9px;
+}
+
+.mod-car-order_dispatch .add-info img{
+    vertical-align: middle;
+    width: 12px;
+    height: 14px;
+    padding-right: 4px;
+}
+
+.mod-car-order_dispatch .address{
+    padding-left: 18px;
+    color: #666;
+}
+
+.ins-cla-car{
+    padding-bottom: 69px;
+}
+
+.ins-cla-car .dd{
+    position: absolute;
+    bottom: auto;
+    left: 0;
+}
+
+
+/***********************carSpecialAgreement***********************/
+
+.mod-car-special-agree{
+    padding: 10px 24px;
+}
+
+.mod-car-special-agree .title{
+    text-align: center;
+    font-size: 18px;
+    color: #737373;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.mod-car-special-agree .cont{
+    padding-bottom: 30px;
+}
+
+.mod-car-special-agree .cont .cont_inner{
+    line-height: 1.6;
+}
+
+/***********************cardetail***************************/
+.car-detail-order-status{
+    position: relative;
+}
+
+.car-detail-order-status-img{
+    width: 87px;
+    height: 61px;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    z-index: 1;
+    background: url("https://ts.market.mi-img.com/thumbnail/png/q80/Finance/05d6274aefa424c9d12c885946c4e269d6c60dd57") no-repeat;
+    background-size: contain;
+
+}
+
+
+.car-detail-order-status-img:before {
+    font-size: 14px;
+    line-height: 1;
+    color: #faa8a8;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.car-detail-order-status-proposaled:before {
+    content: "待生效";
+}
+.car-detail-order-status-issued:before {
+    content: "待起保";
+}
+.car-detail-order-status-checked:before {
+    content: "待支付";
+}
+.car-detail-order-status-protection:before {
+    content: "保障中";
+}
+.car-detail-order-status-fail:before {
+    content: "失败";
+}
+.car-detail-order-status-cancel:before {
+    content: "已退保";
+}
+
+/******************carSelectInsurance*********************/
+.car_select_insurance{
+    background-color: #ffba4b;
+    /*height: 100vh;*/
+    position: relative;
+    font-size: 0;
+    padding-bottom: 14px;
+}
+
+.mod-content_car_select_insurance{
+    padding: 13px;
+}
+
+.mod-content_car_select_insurance>div{
+    width: 48%;
+    display: inline-block;
+    margin: 0 4% 4% 0;
+}
+
+.mod-content_car_select_insurance .car_fir_wrap{
+    position: relative;
+    font-size: 0;
+}
+
+.mod-content_car_select_insurance .car_fir_wrap:nth-child(2n){
+    margin-right: 0;
+}
+
+.mod-content_car_select_insurance .car_fir_wrap:nth-last-of-type(2){
+    margin-bottom: 0;
+}
+
+.mod-content_car_select_insurance .car_fir_wrap:last-child{
+    margin-bottom: 0;
+}
+
+.mod-content_car_select_insurance .car_intro_wrap .intro_wrap{
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mod-content_car_select_insurance .car_intro_wrap .car_select_insurance_btn{
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+.mod-content_car_select_insurance .car_intro_wrap .car_select_insurance_btn img{
+    width: 43%;
+}
+
+.mod-content_car_select_insurance .car_intro_wrap .bottom-img{
+    width: 100%;
+}
+
+.mod-content_car_select_insurance .car_intro_wrap .intro_wrap .intro_f{
+    color: #000;
+}
+
+.mod-content_car_select_insurance .car_intro_wrap .intro_wrap .intro_s{
+    color: #f43320;
+}
+
+.mod-content_car_select_insurance .car_intro_wrap .intro_wrap .intro_t{
+    color: #000;
+}
+
+.mod-car_select_insurance_logo{
+    text-align: center;
+    width: 100%;
+}
+
+.mod-car_select_insurance_logo img{
+    width: 120px;
+}
+
+
+

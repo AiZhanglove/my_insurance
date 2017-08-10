@@ -1,0 +1,26 @@
+.btn {
+    position: relative;
+    height: 60px;
+    width: 200%;
+    font-size: 24px;
+    border: 1px solid #15adae;
+    text-decoration: none;
+    color: #15adae;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.btn[disabled] {
+    background-color: #eee;
+    pointer-events: none;
+    opacity:.8;
+}
+.btn.graybtn {
+    height: 80px;
+    border-color: #bababa;
+    background-color: #fff;
+    color: #000;
+}

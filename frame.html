@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no,minimum-scale=1">
+    <title>&lrm;</title>
+    <link rel="stylesheet" href="reset.css">
+    <script>
+        var oHtml=document.getElementsByTagName("html")[0];
+        if(window.MiFiJsInternal && MiFiJsInternal.getFontScale){
+            var scalePercent = MiFiJsInternal.getFontScale();
+            oHtml.style.fontSize=12/scalePercent+"px";
+        }else{
+            oHtml.style.fontSize="12px";
+            //miui大字体重置
+            var realFontSize = parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+            var resetFontSize = 12 * 12 / realFontSize;
+            oHtml.style.fontSize = resetFontSize + "px";
+        }
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script src="/tracker.js"></script>
+<script src="http://s1.mi.com/open/common/js/address_all_new.js"></script>
+<script src="/iscroll.js"></script>
+<script src="build/frame_build.js"></script>
+</body>
+</html>

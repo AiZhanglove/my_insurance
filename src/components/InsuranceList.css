@@ -1,0 +1,145 @@
+.insurancelist-container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+}
+.insurancelist-head {
+    padding:15px 0 15px 12px;
+    color: #343434;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+}
+.insurancelist-title {
+    font-size: 16px;
+    padding-bottom: 8px;
+    line-height: 1;
+    background-color: #fff;
+    color: #343434;
+}
+.insurancelist-item {
+    padding-top: 13px;
+}
+.first-item {
+    padding-top: 0!important;
+}
+.insurancelist-item > a {
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+}
+.insurancelist-wrap {
+    list-style: none;
+    padding: 14px 12px;
+    background-color: #fff;
+    color: #8c8c8c;
+}
+
+.insurancelist-wrap .left {
+    display: inline-block;
+    width: 60%;
+    min-width: 146px;
+    vertical-align: middle;
+}
+.insurancelist-wrap .middle {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+.insurancelist-wrap .right {
+    position: absolute;
+    width: 84px;
+    text-align: right;
+    right: 0;
+    top:20px;
+}
+.insurancelist-desc {
+    font-size: 12px;
+}
+
+.insurancelist-wrap .price-box {
+    color: rgb(255, 124, 103);
+    text-align: right;
+}
+.insurancelist-wrap .price {
+    font-size: 24px;
+    font-family: miuiex,Helvetica;
+    vertical-align: middle;
+    font-weight:200;
+}
+.insurancelist-wrap .price i {
+    font-size: 16px;
+    font-family: normal;
+    vertical-align: top;
+}
+.insurancelist-wrap .price txt {
+    font-family: sans-serif;
+}
+.insurancelist-wrap .price txt[size='20']{
+    font-size: 20px;
+}
+.insurancelist-wrap .price txt[size='16']{
+    font-size: 16px;
+}
+.insurancelist-wrap .price txt[size='14']{
+    font-size: 14px;
+}
+.insurancelist-wrap .price txt[size='12']{
+    font-size: 12px;
+}
+
+.insurancelist-wrap .sup {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 5px 0 0 3px;
+}
+.insurancelist-wrap .price-infobox {
+    color: #8d8d8d;
+    font-size: 12px;
+    text-align: right;
+    font-weight: normal;
+}
+.insurancelist-wrap .price-infobox div {
+    margin: 2px 0;
+    font-size: 11px;
+}
+.insurancelist-wrap .gap {
+    padding: 0 4px;
+}
+.miflag {
+    float: right;
+    height: 16px;
+    line-height: 16px;
+    background: url("/images/insurance/gray_mi.png") no-repeat left center;
+    -webkit-background-size: 16px;
+    background-size: 16px;
+    padding-left: 19px;
+    color: #b1b1b2;
+    color: rgba(0,0,0,.4);
+}
+.cover-img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 156.66px;
+    vertical-align: top;
+    /*background: #eee url(/images/insurance/gray_mi.png) no-repeat center center;*/
+    background: #F7F7F7 url(https://ts.market.mi-img.com/thumbnail/png/q80/Finance/0e78e4edc342e6499b0cbdce05d8ff45fe6416dec) no-repeat center center;
+}
+
+@media screen and (max-width: 320px) {
+    .cover-img {
+        min-height: 139px;
+    }
+}
+
+.channel-banner img {
+    max-width: 100%;
+    min-height: 107px;
+    vertical-align: top;
+}
+.indexloading {
+    background-image: url(/images/loading.gif) !important;
+}

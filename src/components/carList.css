@@ -1,0 +1,108 @@
+/*@media screen and (min-height:635px){
+    .car-container{
+    	width: 100%;
+    	min-height: 667px;
+    	background-color: #efeff0;
+    }
+
+    .car-container > div{
+    	background-color: #fff;
+    }
+
+}
+
+@media screen and (min-height:680px){
+    .car-container{
+    	width: 100%;
+    	min-height: 736px;
+    	background-color: #efeff0;
+    }
+
+    .car-container > div{
+    	background-color: #fff;
+    }
+
+}*/
+
+.title-info-wrap{
+	padding: 13px 24px;
+	display: box;
+	-webkit-display: box;
+	display: -webkit-box;
+	-webkit-display: -webkit-box;
+	box-pack: justify;
+	-webkit-box-pack: justify;
+	border-bottom: 10px solid #efeff0;
+}
+
+.title-info-wrap span{
+	font-size: 12px;
+}
+
+.title-info-wrap .plate-name{
+	width: 65%;
+	padding-top: 5px;
+}
+
+
+.title-info img{
+	width: 40px;
+	height: 40px;
+}
+
+.gift a{
+	display: block;
+}
+
+.plate-name > div{
+
+}
+
+.plate-name h4{
+	margin: 0;
+}
+
+.plate-name .name{
+	color: #999;
+	font-size: 12px;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.ins-list-wrap{
+	padding: 0 24px;
+	border-bottom: 10px solid #efeff0;
+}
+
+.ins-list-wrap .title, .ins-list-wrap .ins-price{
+	padding: 18px 0;
+}
+
+.title > span{
+	font-size: 14px;
+}
+
+.ins-price > span{
+	font-size: 14px;
+}
+
+.col-right{
+	color: #b8b8b8;
+    display: inline-block;
+}
+
+.detail > li{
+	padding: 13px 0;
+}
+
+.detail > li > span{
+	font-size: 12px;
+}
+
+

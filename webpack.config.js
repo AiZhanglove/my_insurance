@@ -2,7 +2,8 @@ var webpack= require('webpack');
 module.exports = {
 	entry:{
 		index_build:'./src/index.js',
-		category_build: './src/category.js'
+		category_build: './src/category.js',
+		frame_build: './src/frame.js'
 	},
 	output:{
 		path:'./build',

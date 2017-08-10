@@ -1,0 +1,26 @@
+@s:36rem;
+.icon{
+  position: relative;
+}
+.icon-arrow{
+  width: 24/@s;
+  height: 24/@s;
+  &::after{
+	content: '';
+	width: 24/@s;
+	height: 24/@s;
+	border-right: 1px solid #b2b2b2;
+	border-bottom: 1px solid #b2b2b2;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+}
+.icon-car {
+  width: 71/@s;
+  height: 52/@s;
+  background: url("https://ts.market.mi-img.com/thumbnail/png/q80/Finance/02a9c40aa63503bb985d441a5211bb975da4184a2");
+  background-size: 100% 100%;
+}

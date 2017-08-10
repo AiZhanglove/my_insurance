@@ -1,0 +1,223 @@
+.max-layout {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.tab-container {
+    position: relative;
+    padding-top: 46px;
+}
+.tabbar {
+    position: absolute;
+    top:0;
+    box-sizing: border-box;
+    height: 46px;
+    line-height: 46px;
+    width: 33.33333%;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    color: #8d8d8d;
+    background-color: #fff;
+    z-index: 10;
+}
+.tabbar0{
+    left: 0;
+    border-left: 0 none;
+}
+.tabbar1{
+    left: 33.33333%;
+}
+.tabbar2{
+    right:0;
+}
+.tabbar0:after,.tabbar1:after {
+    content: '';
+    width: 2px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top:12px;
+    bottom:12px;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+.tabbar0:after {
+    right: 0;
+}
+.tabbar1:after {
+    right: 0;
+}
+.tab-container .active {
+    color: #68b3b6;
+}
+.tab-container .active:before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom:0;
+    z-index:1;
+    height: 2px;
+    background-color: #50aaad;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+
+.tab-orange .active {
+    color: #ff9579;
+}
+.tab-orange .active:before {
+    background-color: #ff9579;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:2){
+    .tabbar {
+        height: 92px;
+        line-height: 92px;
+        width: 66.66666%;
+        font-size: 28px;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+    .tabbar2 {
+        -webkit-transform-origin: 100% 0 !important;
+        transform-origin: 100% 0 !important;
+    }
+}
+
+/**/
+.ins-infomation {
+    padding: 24px 22px;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+}
+.ins-infomation span {
+    padding:0 8px 0 0;
+}
+.ins-infomation div {
+    padding-top: 10px;
+}
+.ins-infomation .ins-orange {
+    font-size: 36px;
+    font-family: miuiex,"Helvetica Neue";
+}
+.ins-infomation .sup {
+    font-size: 12px;
+}
+
+.ins-infomation .car-info{
+    padding: 0;
+}
+
+
+.car-info .province{
+    display: inline-block;
+    position: relative;
+    padding: 4px 22px 4px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.car-info .cut-rule{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: red;
+    padding: 0;
+
+    transform-origin: 100% 0;
+    transform: scaleX(.5);
+    -webkit-transform-origin: 100% 0;
+    -webkit-transform: scaleX(.5);
+}
+
+.province:after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    right: 9px;
+    width: 4px;
+    height: 4px;
+    border-left: 1px solid #666;
+    border-bottom: 1px solid #666;
+    transform: rotate(-45deg); 
+}
+
+.car-info .plate{
+    padding: 2px 3px 3px 5px;
+    border-left: none;
+}
+
+.plate .abbreviation{
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 2px;
+}
+
+.plate input{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}
+
+
+.front-img {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 180px;
+}
+.max-width {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+    .front-img  {
+        min-height: 160px;
+    }
+}
+
+.ins-producttt {
+    font-size: 13px;
+    color: #343434;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.fixed {
+    position: fixed;
+}
+.table-faq {
+    border-collapse: collapse;
+    border:1px solid #ededed;
+    line-height: 1.6;
+    width: 100%;
+}
+.table-faq td,.table-faq th {
+    border: 1px solid #ededed;
+    padding: 10px 4px;
+    text-align: center;
+}
+.img-table {
+    width: 100%;
+}
+.img-table td:nth-child(1) {
+    padding-right: 5px;
+}
+.img-table td:nth-child(2) {
+    padding-left: 5px;
+}
+.img-table img {
+    max-width: 100%;
+}
+.img-table article {
+    color: rgb(141, 141, 141);
+}
+.prod-dtt {
+    font-size: 20px;
+    padding-bottom: 6px;
+}

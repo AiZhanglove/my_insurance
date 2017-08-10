@@ -1,0 +1,148 @@
+html {
+  font-size: 12px;
+}
+.measure-container {
+  display: none;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  top:0;
+  z-index:999;
+  font-size: 1.1666666666666667rem;
+  .measure-mask {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index:1;
+    background-color: rgba(0,0,0,.2);
+  }
+  .measure-inner {
+    position: absolute;
+    z-index:2;
+    bottom:0;
+    left: 0;
+    right: 0;
+    max-height:90vh;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #fff;
+  }
+  .measure-head {
+    padding: 1.5rem 24px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index:10;
+  }
+  .noborder {
+    border: 0 none!important;
+  }
+  .close-measure {
+    position: absolute;
+    right: 24px;
+    font-size: 16px;
+    width: 26px;
+    height:26px;
+    overflow: hidden;
+    color: #999;
+    background: url("https://ts.market.mi-img.com/thumbnail/png/q80/Finance/083e44469603d374d729c2f21e6ffcca054437301") no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+    margin-top: -5px;
+  }
+  .measure-content {
+    //margin: 4.25rem 0 5.25rem;
+    padding: 5.25rem 24px 6.4rem;
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow: auto;
+    position: relative;
+    z-index:2;
+    .measure-list {
+      margin: 8px 0 0;
+      dt {
+        font-weight: bold;
+      }
+    }
+    .ins-form_newcommon {
+       font-size: 1.1666666666666667rem;
+    }
+    .ins-form_newcommon li {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .ins-form_newcommon .right-arrow:before {
+      right: 6px;
+    }
+  }
+  .measure-btnbox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    z-index:10;
+    padding: 1rem 24px;
+    background-color: #fff;
+    .measure-btn {
+      cursor: pointer;
+      padding: 1rem 0;
+      display: block;
+      color: #fff;
+      font-size: 1.25rem;
+      border-radius: 3px;
+      background-color: #ff6a42;
+      text-align: center;
+    }
+    .measure-btn-disabled {
+      opacity: .6;
+      pointer-events: none;
+    }
+  }
+}
+.showModal {
+  display: block !important;
+}
+
+.flex-container-box {
+  margin: 0;
+  font-size: 1rem;
+  .flex-single {
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    min-width: 22%;
+    padding: 0.66667em 1.6em;
+    margin-right: 3%;
+    margin-top: 3%;
+    text-align: center;
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+  .active {
+    background-color: #ff6a42;
+    color: #fff;
+    border-radius: 3px;
+    &:before {
+      display: none;
+    }
+  }
+  .measure-list-desc {
+    margin-top: 3%;
+  }
+}
+
+.cascade-listbox {
+  height: 60vh;
+  overflow: auto;
+  li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+  }
+}

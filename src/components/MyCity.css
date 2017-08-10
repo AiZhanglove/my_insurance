@@ -1,0 +1,110 @@
+.citys-container{
+	/*display: none;*/
+  	/*position: fixed;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.mod-search{
+	padding: 10px 24px;
+	background-color: #f2f2f2;
+}
+
+.search-wrap{
+	background-color: #fff;
+}
+
+.mod-search img{
+	width: 9%;
+	/*height: 12px;*/
+	padding: 10px 8px;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.mod-search .ipt{
+	display: inline-block;
+	width: 65%;
+	padding-top: 5px;
+	box-sizing: border-box;
+}
+
+.ipt input{
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+	height: 22px;
+	width: 100%;
+}
+
+.search_name{
+	display: inline-block;
+	width: 17%;
+	padding: 10px 0;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.useful_title{
+	padding-bottom: 10px;
+	font-size: 12px;
+}
+
+.mod-useful{
+	padding: 10px 24px 0 24px;
+	/*border-bottom: 10px solid #f2f2f2;*/
+}
+
+.useful_city{
+	display: inline-block;
+	padding: 6px 14px;
+	font-size: 12px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.mod-citys .letter{
+	padding: 14px;
+	background-color: #f2f2f2;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.mod-citys .city{
+	padding: 10px;
+}
+
+.first_letter{
+	position: fixed;
+	right: 10px;
+	top: 200px;
+	padding: 0 16px;
+}
+
+.select_letter{
+	display: block;
+	/*color: #e35d58;*/
+}
+
+.upcase {
+	text-transform:uppercase;
+}
+
+.mod-car_none_data{
+	width: 100%;
+	padding: 40px 0;
+	text-align: center;
+}
+

@@ -4,11 +4,8 @@ require('./CategoryList.less');
 export default class CategoryList extends React.Component {
 
     linkTo(e,el){
-        console.log(e);
-        // return
         var url= methods.baseUrl + "/insurance/" +e.currentTarget.getAttribute("data-href");
         var title = el.salesName;
-        return
         if(el.requireLogin){
             //跳转
             methods.commonLogin({

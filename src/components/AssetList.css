@@ -1,0 +1,242 @@
+
+.asset-box .health-header {
+    padding: 24px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.health-info h4 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.health-info strong {
+    font-size: 36px;
+    color: #ff7c67;
+    font-family: miuiex;
+}
+
+.health-info .ed {
+    padding-top: 2px;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+.infotool {
+    position: absolute;
+    right: 24px;
+    top:24px;
+    width: 16px;
+}
+.infotool a {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left:0;
+}
+.loglist {
+    top:0;
+    background: url("/images/insurance/his.png") no-repeat;
+}
+.health-faq {
+    top:52px;
+    background: url("/images/insurance/help.png") no-repeat;
+}
+.loglist,.health-faq {
+    -webkit-background-size: contain;
+}
+.health-list {
+    list-style: none;
+    background-color: #fff;
+    padding: 0 24px;
+    margin-bottom: 10px;
+}
+.health-list li {
+    padding: 18px 0;
+}
+.col-left,.col-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+.col-right {
+    color: #b8b8b8;
+}
+.col-3 {
+    width: 30%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 70%;
+}
+.text-right {
+    text-align: right;
+}
+
+/**/
+.od-container {
+    padding-bottom: 70px;
+}
+.od-header {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height:205px;
+    background-color: #15adae;
+    color: #fff;
+    padding: 4px 24px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.od-status {
+    width: 142px;
+    height: 120px;
+    position: absolute;
+    right: 0px;
+    bottom:0;
+    z-index:1;
+    background: url("/images/insurance/comm_status.png") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.od-status:before {
+    font-size: 24px;
+    line-height: 1;
+    color: #15adae;
+    position: absolute;
+    left: 10px;
+    top:60px;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.logstatus-wait_renew {
+    color: #ff7c67;
+}
+
+/*已投保*/
+.od-status-proposaled:before {
+    content: "待生效";
+}
+/*已出单*/
+.od-status-issued:before {
+    content: "待生效";
+}
+/*已提交*/
+.od-status-commit:before {
+    content: "已提交";
+}
+/*已核保*/
+.od-status-checked:before {
+    content: "已核保";
+}
+/*保障中*/
+.od-status-protection:before {
+    content: "保障中";
+}
+/*失败*/
+.od-status-fail:before {
+    content: "投保失败";
+}
+/*取消*/
+.od-status-cancel:before {
+    content: "已退保";
+}
+/*已失效*/
+.od-status-expired:before {
+    content: "保单过期";
+}
+/*欠费中*/
+.od-status-wait_renew:before {
+    content: "欠费中";
+}
+
+.od-info strong {
+    font-size: 82px;
+    font-family: miuiex;
+    vertical-align: middle;
+}
+.od-info h4 {
+    color: #fff;
+    opacity:0.7;
+    font-size: 16px;
+    padding-top: 12px;
+}
+.integer span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-top: -60px;
+    font-size: 12px;
+}
+
+.block-btnbox {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 40px;
+    padding: 12px 0;
+    background-color: #fff;
+}
+.block-btnbox:before {
+    content: '';
+    border-top: 1px solid #e5e5e5;
+    width: 200%;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 10;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+}
+.block-btnbox a {
+    text-align: center;
+    display: block;
+    margin: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 2px;
+    background: rgb(21, 173, 174);
+}
+#cover-tips {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    z-index:100000;
+    background: rgba(0,0,0,.5) url("/images/insurance/share.png") no-repeat 50% 30%;
+    -webkit-background-size: 60%;
+    background-size: 60%;
+}
+.arrears-tips {
+    border-bottom: 10px solid #efeff0;
+    padding: 6px 24px 16px;
+}
+.arrears-tips >li {
+    padding: 10px 0 0;
+}
+.arrears-tips >li > i {
+    display: inline-block;
+    width: 6px;
+    height:6px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: rgb(255, 124, 103);
+    margin-right: 6px;
+    vertical-align: middle;
+}

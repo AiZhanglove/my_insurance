@@ -1,0 +1,149 @@
+.history-log, li {
+    list-style: none;
+    font-size: 12px;
+}
+
+.history-log {
+    padding: 0 24px;
+    background: #fff;
+    color: #8d8d8d;
+}
+.tab-top {
+    padding-top: 6em!important;
+}
+.log-list {
+    padding: 16px 0;
+}
+.log-list a {
+    color: #8d8d8d;
+}
+
+.log-list strong {
+    font-size: 15px;
+    color: #343434;
+    font-weight: normal;
+}
+
+.log-info {
+    margin-bottom: 6px;
+}
+
+.left {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+.middle {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+.right {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.gap {
+    padding: 0 6px;
+}
+.logstatus-fail,.logstatus-no_exist,.logstatus-commit,.logstatus-true {
+    color: #ff7c67;
+}
+.car-checked{
+    color: #ff7c67;
+}
+.log-link {
+    position: relative;
+}
+.log-link:before {
+    content: '';
+    position: absolute;
+    right:10px;
+    top:50%;
+    width: 10px;
+    height:10px;
+    border: 1px solid #ddd;
+    border-width: 1px 1px 0 0;
+    z-index:10;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -6px;
+}
+.log-link .logstatus {
+    padding-right: 30px;
+}
+.assetindex .ins-loading {
+    height: 60% !important;
+    top:20% !important;
+}
+
+.asset-weather .ins-loading {
+    height: 60% !important;
+    top:40% !important;
+}
+
+.asset-weather .tab-wraper {
+    position: absolute;
+    background-color: transparent;
+    top:10em;
+}
+
+.asset-weather .tab-wraper::after {
+    display: none;
+}
+
+.asset-weather .tab-group a {
+    color: #ffeca2;
+}
+
+.asset-weather .tab-group a.active {
+    background-color: #fff8a9;
+    color: #fd6555;
+}
+.asset-weather .tab-group a::before {
+    border-color: #fff8a9;
+}
+
+.weather-listhead {
+    /*padding: 40px 13px 72px;*/
+    padding: 3.33em 13px 6em;
+    background-color: #f55152;
+    text-align: center;
+    color: #fff8a9;
+    position: relative;
+}
+.weather-listhead .price {
+    font-size: 52px;
+    font-family: miuiex, Helvetica;
+    font-weight: normal;
+}
+.weather-listhead .makemoney {
+    position: absolute;
+    right: 13px;
+    color: #fff8a9;
+    text-decoration: underline;
+}
+
+.asset-weather .left {
+    width: 40%;
+}
+.asset-weather .middle {
+    width: 20%;
+}
+.asset-weather .right {
+    width: 40%;
+}
+.asset-weather .tab-top {
+    padding-top: 0!important;
+}
+.indexloading {
+    display: block;
+    background: url(/images/loading.gif) no-repeat center center;
+    padding:16px 0;
+}

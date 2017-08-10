@@ -1,0 +1,21 @@
+section,article {
+    display: block;
+}
+.health-list-wrap {
+    padding: 24px;
+    color: #8d8d8d;
+    font-size: 13px;
+    line-height: 1.5;
+    padding-bottom: 80px;
+}
+.health-list-wrap h2 {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.health-list-wrap dl {
+    margin-bottom: 10px;
+}
+.health-list-wrap dt, .health-list-wrap dd {
+    margin: 0 0 4px;
+}

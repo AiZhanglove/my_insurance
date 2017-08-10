@@ -1,0 +1,116 @@
+.tickets-box-wraper {
+  margin: 0 24px;
+}
+.tickets-box {
+  position: relative;
+  padding: 14px 20px 14px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ccc;
+    border-width: 1px 1px 0 0;
+    z-index: 10;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  label {
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+    font-family: normal;
+  }
+  .tickets-value {
+    display: inline-block;
+    width: 70%;
+    text-align: right;
+    color: #f00;
+  }
+}
+
+.tickets-listbox {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  z-index: 1000000;
+  background-color: #fff;
+
+  li {
+    margin-bottom: 10px;
+  }
+  .tickets-list {
+    overflow: auto;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 10px 13px 5.6em;
+    .tickets-list-title {
+      padding: 10px 24px;
+      background-color:#E8474E;
+      color: #fff;
+      position: relative;
+      .check-icon {
+        position: absolute;
+        right: 10px;
+        width: 18px;
+        height: 18px;
+        z-index: 2;
+        background: url(/images/insurance/checked_icon2.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .tickets-list-body {
+      background-color: #FAECDE;
+      padding: 10px 24px;
+      .tickets-list-content {
+        margin-bottom: 10px;
+      }
+      .left {
+        display: inline-block;
+        width: 66%;
+        vertical-align: middle;
+        .price {
+          font-size: 42px;
+          color: #6b3416;
+          font-family: miuiex;
+        }
+      }
+      .right {
+        display: inline-block;
+        color: #6b3416;
+        width: 34%;
+        vertical-align: middle;
+        line-height: 1.4;
+      }
+    }
+    .tickets-list-foot {
+      padding: 10px 24px;
+      background-color:#E8474E;
+      color: #fff;
+    }
+  }
+  .disabled {
+    pointer-events: none;
+    .tickets-list-title {
+      background-color:#999;
+    }
+    .tickets-list-body {
+      background-color: #eee;
+      .price {
+        color: #333 !important;
+      }
+      .right {
+        color: #666;
+      }
+    }
+    .tickets-list-foot {
+      background-color:#999;
+    }
+  }
+}
