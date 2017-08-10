@@ -34,6 +34,7 @@ export default class category extends React.Component {
 
     render() {
         var self = this;
+        console.log(self.props)
         return (
             <div role="nav">
                 <div className="nav btm-bl">
