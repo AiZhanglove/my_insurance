@@ -7,7 +7,7 @@ import FrameDetail from './frame/FrameDetail.jsx';
 
 //链接拦截
 methods.linkInterceptor();
-export default class App extends.Component{
+export default class App extends React.Component{
 	render(){
 		return(
 			<div>
@@ -18,9 +18,10 @@ export default class App extends.Component{
 }
 
 var routes = (
-	<Router>
+	<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<Route path="detail/:id" component={FrameDetail}></Route>
 		</Route>
 	</Router>
 )
+ReactDOM.render(routes,document.getElementById('app'));

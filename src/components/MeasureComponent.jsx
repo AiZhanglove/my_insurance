@@ -146,6 +146,7 @@ export default class MeasureComponent extends React.Component {
             },
             success:function(res){
                 if(res.success){
+                    if(res.sumInsuredPeriodPremiums.length === 0) return;
                     var defaultPremium = self.getTargetDefault(res.sumInsuredPeriodPremiums,"defaultOption","sumInsured");
                     //默认保障时间选择项
                     var activeTimeRange = self.getTargetDefault(defaultPremium.periodPremiums,"defaultOption","policyPeriod");

@@ -1,13 +1,13 @@
 import React from 'react';
 import methods from '../assets/methods.js';
-require("./ActivityBar.less");
+import './ActivityBar.less';
 export default class ActivityBar extends React.Component {
     // 构造
     constructor(props) {
         super(props);
         // 初始状态
         this.state = {
-            configs:''
+            configs: ''
         };
     }
 
@@ -16,28 +16,28 @@ export default class ActivityBar extends React.Component {
         methods.Ajax({
             type: 'GET',
             url: '/v1/insurance/getProductDetailActivityInfo',
-            params:{
-                productId:self.props.id
+            params: {
+                productId: self.props.id
             },
-            success: function (res) {
-                if(res.success){
+            success: function(res) {
+                if (res.success) {
                     self.setState({
-                        configs:res.data
-                    })
+                        configs: res.data
+                    });
                 }
             }
-        })
+        });
     }
 
-    linkTo(){
+    linkTo() {
         var self = this;
         //统计方法
         MiFiLoantracker({
             pageTitle: 'ins_detail_ac_' + self.props.id,
-            productType:"insurance"
+            productType: 'insurance'
         });
         //跳转
-        methods.startActivity(self.state.configs.activityUrl,"");
+        methods.startActivity(self.state.configs.activityUrl, '');
     }
 
     componentDidMount() {
@@ -45,10 +45,17 @@ export default class ActivityBar extends React.Component {
     }
 
     render() {
-        return (
-            this.state.configs ?
-            <div className="activity-show" onClick={() => {this.linkTo()}} href={this.state.configs.activityUrl}><span className="activity-show-inner">{this.state.configs.activityTip}</span></div>
-                : <void></void>
-        );
+        return this.state.configs
+            ? <div
+                  className="activity-show"
+                  onClick={() => {
+                      this.linkTo();
+                  }}
+                  href={this.state.configs.activityUrl}>
+                  <span className="activity-show-inner">
+                      {this.state.configs.activityTip}
+                  </span>
+              </div>
+            : <void />;
     }
 }

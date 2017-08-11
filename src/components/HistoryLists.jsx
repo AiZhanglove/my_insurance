@@ -25,7 +25,6 @@ export default class HistoryList extends React.Component {
                             var tag = el.orderDetailUrl ? el.orderDetailUrl : 'detail';
                             var tagUrl = '?tintColor=15adae#/'+tag+'/' + el.id;
                             var tagUrl1 = '?productId='+el.productId+'#/'+tag+'/' + el.id;
-                            //tagUrl1 = window.MiFiJsInternal && !MiFiJsInternal.mock ? '&productId='+el.productId+tagUrl1 : '?productId='+el.productId+tagUrl1;
                             return (
                                 <li key={index} className="log-list log-link btm-bl">
                                     {

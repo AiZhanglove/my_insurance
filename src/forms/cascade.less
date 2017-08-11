@@ -1,0 +1,49 @@
+#cascade-choose {
+  display: none;
+  position: fixed;
+  left:0;
+  right:0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0,0,0,.7);
+  #cascade-inner {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 12%;
+    margin: 0 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    h4 {
+      padding: 1em 24px;
+      //border-bottom: 1px solid #eee;
+    }
+  }
+  #cascade-close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: url("https://ts.market.mi-img.com/thumbnail/png/q80/Finance/083e44469603d374d729c2f21e6ffcca054437301") no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+  }
+  #cascade-list {
+    min-height: 20vh;
+    max-height: 50vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    li {
+      padding: 16px 24px;
+      //border-bottom: 1px solid #eee;
+    }
+  }
+}
+#cascade-choose.showModal {
+  display: block !important;
+}

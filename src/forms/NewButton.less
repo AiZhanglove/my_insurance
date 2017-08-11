@@ -1,0 +1,52 @@
+.ins-new-button {
+  position: relative;
+  .content {
+    width: 100%;
+    background: #fff;
+    display: -webkit-box;
+    display: -moz-box;
+    box-sizing: border-box;
+    -webkit-box-align:center;
+    -moz-box-align:center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    .a {
+      text-align: center;
+      font-size: 14px;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      background: #ff6a42;
+      a {
+        padding: 18px 0;
+        display: block;
+        color: #fff;
+      }
+    }
+    .disabled {
+      opacity: 0.3;
+      a {
+        pointer-events: none;
+      }
+    }
+  }
+  .fixed-price-btn {
+    font-size: 20px;
+    padding-left: 24px;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    del {
+      color: #999;
+      font-size: 0.6em;
+      padding-left: 6px;
+    }
+    .smallsize {
+      font-size: 66%;
+      padding-left: 3px;
+    }
+  }
+}
+.hide-newbtn {
+  display: none;
+}

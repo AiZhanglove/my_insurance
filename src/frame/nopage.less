@@ -1,0 +1,44 @@
+.nopage {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 1.1666666666666667rem;
+    .nopage-pic {
+        max-width: 100%;
+    }
+    dl {
+        margin-top: 0.5rem;
+    }
+    .new-product__list {
+        a {
+            display: block;
+            background-color: #f3f3f3;
+            padding: 0.8rem;
+            text-align: left;
+            text-indent: 1rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            &::after {
+                content: '';
+                width: 0.5833333333333334rem;
+                height: 0.5833333333333334rem;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                margin-top: -0.47140452079103173rem;
+                border: 1px solid #666;
+                border-width: 1px 1px 0 0;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+            }
+        }
+        .active {
+            background-color: #ff6a42;
+            color: #fff;
+            &::after {
+                border-color: #fff;
+            }
+        }
+    }
+}

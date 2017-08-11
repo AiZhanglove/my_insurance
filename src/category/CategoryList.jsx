@@ -34,7 +34,6 @@ export default class CategoryList extends React.Component {
             textAlign: "center",
             color: "#999"
         }
-        console.log(this.props.lists)
         return (
             <div className="categorylist-container">
                 <div className="category-body">
