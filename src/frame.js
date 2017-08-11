@@ -4,6 +4,7 @@ import {Router, Route, hashHistory, IndexRoute } from "react-router";
 
 import methods from './assets/methods.js';
 import FrameDetail from './frame/FrameDetail.jsx';
+import Inform from './frame/Inform.jsx';
 
 //链接拦截
 methods.linkInterceptor();
@@ -21,6 +22,7 @@ var routes = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<Route path="detail/:id" component={FrameDetail}></Route>
+			<Route path="inform/:id" component={Inform} />
 		</Route>
 	</Router>
 )
