@@ -1,0 +1,151 @@
+.newtickets-box-wraper {
+  margin: 0 24px;
+  .tickets-box {
+    position: relative;
+    padding: 18px 20px 18px 0;
+    font-size: 12px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #ccc;
+      border-width: 1px 1px 0 0;
+      z-index: 10;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      margin-top: -5px;
+    }
+    label {
+      display: inline-block;
+      width: 30%;
+    }
+    .tickets-value {
+      display: inline-block;
+      width: 70%;
+      text-align: right;
+      color: #ff7c67;
+    }
+  }
+  .tickets-closebar {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    height:40px;
+    background-color: #fff;
+  }
+  .tickets-listbox {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    z-index: 1000000;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.4);
+    li {
+      margin-bottom: 10px;
+    }
+    .tickets-closebtn {
+      position: absolute;
+      right: 12px;
+      top:8px;
+      width: 26px;
+      height:26px;
+      overflow: hidden;
+      background: url("https://ts.market.mi-img.com/thumbnail/png/q80/Finance/083e44469603d374d729c2f21e6ffcca054437301") no-repeat;
+      background-size: contain;
+      -webkit-background-size: contain;
+      border-radius: 26px;
+    }
+    .tickets-list-inner {
+      background-color: #fff;
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      top:56px;
+      bottom:16px;
+    }
+    .tickets-list {
+      overflow: auto;
+      box-sizing: border-box;
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      top:4px;
+      bottom:12px;
+      background-color: #fff;
+      .tickets-list-title {
+        padding: 10px 16px;
+        background-color:#E8474E;
+        color: #fff;
+        position: relative;
+        .check-icon {
+          position: absolute;
+          right: 10px;
+          width: 18px;
+          height: 18px;
+          z-index: 2;
+          background: url(/images/insurance/checked_icon2.png) no-repeat;
+          background-size: contain;
+        }
+      }
+      .tickets-list-body {
+        background-color: #FAECDE;
+        padding: 10px 16px;
+        .tickets-list-content {
+          margin-bottom: 10px;
+        }
+        .left {
+          display: inline-block;
+          width: 66%;
+          vertical-align: middle;
+          .price {
+            font-size: 48px;
+            color: #6b3416;
+          }
+        }
+        .right {
+          display: inline-block;
+          color: #6b3416;
+          width: 34%;
+          vertical-align: middle;
+          line-height: 1.4;
+        }
+      }
+      .tickets-list-foot {
+        padding: 10px 16px;
+        background-color:#E8474E;
+        color: #fff;
+      }
+    }
+    .disabled {
+      pointer-events: none;
+      .tickets-list-title {
+        background-color:#999;
+      }
+      .tickets-list-body {
+        background-color: #eee;
+        .price {
+          color: #333 !important;
+        }
+        .right {
+          color: #666;
+        }
+      }
+      .tickets-list-foot {
+        background-color:#999;
+      }
+    }
+  }
+
+}
+.top-bl{
+  &:before {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+}
